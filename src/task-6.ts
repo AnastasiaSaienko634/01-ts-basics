@@ -2,6 +2,6 @@ function getFirstElement<T>(arr: T[]): T | undefined {
   return arr[0];
 }
 
-getFirstElement([1, 2, 3]); // 1
-getFirstElement(["a", "b", "c"]); // "a"
-getFirstElement([true, false, true]); // true
+const numbers = getFirstElement<number>([1, 2, 3]); // 1
+const strings = getFirstElement<string>(["a", "b", "c"]); // "a"
+const booalen = getFirstElement<boolean>([true, false, true]); // true
